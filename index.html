@@ -3,16 +3,24 @@
   <head>
       <link href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css" rel="stylesheet" />
     <link href='https://fonts.googleapis.com/css?family=Roboto:500,300,700,400' rel='stylesheet' type='text/css'>
-    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/reset.css" rel="stylesheet" />
+    <link href="css/main.scss" rel="stylesheet" />
+
     <script src=https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js></script>
   </head>
 
   <body ng-app="myApp">
+
+    <div class="header-container">
     <div class="header">
-      <div class="container">
-        <h1>Angular Store </h1>
-      </div>
+        <div class="left-nav">
+                <h1>Iron Tix</h1>
+        </div>
+        <div class="right-nav">
+            <a href="admin.html">Admin</a>
+        </div>
     </div>
+</div>
 
     <div class="main" ng-controller="MainController">
       <div class="container">

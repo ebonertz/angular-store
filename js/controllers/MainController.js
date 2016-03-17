@@ -1,6 +1,6 @@
 app.controller('MainController', ['$scope', function($scope) {
   $scope.title = 'Upcoming Events';
-  $scope.promo = 'Performing Live with Uncle Evan and the Drinkers';
+  $scope.promo = 'Awesome Event You Love!';
   $scope.product = {
   	name: 'Maywood',
     location:'Raleigh',
