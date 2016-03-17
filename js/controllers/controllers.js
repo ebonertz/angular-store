@@ -1,4 +1,4 @@
-app.controller('MainController', ['$scope', function($scope) {
+IronTix.controller('MainController', ['$scope', function($scope) {
   $scope.title = 'Upcoming Events';
   $scope.promo = 'Awesome Event You Love!';
   $scope.product = {
