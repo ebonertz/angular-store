@@ -11,43 +11,29 @@
   </div>
 
   <div class="main" ng-controller="MainController">
-    <h1>{{ title }}</h1>
+    <h1>Sweet Events!</h1>
 
-    <!-- do something like this to repeat the products:
-    <ul>
-    <li ng-repeat="student in students | filter:name">{{student.name}}, {{student.city}}</li>
-    </ul> -->
+        <ul>
+          <li ng-repeat="events in event.events" class="thumbnail">
+            <h2>{{events.name}}</h2>
+            <p class="location">{{events.location}} </p>
+            <p class="price"> {{events.price | currency:"USD$"}}</p>
+            <p class="date">{{events.date}}</p>
+            <img src="{{events.image}}">
+          </li>
+        </ul>
 
-    <div class="col-md-4">
+    <!-- the thing below works -->
+    <!-- <div class="col-md-4">
       <div class="thumbnail">
-        <h2>{{ promo }}</h2>
-        <p class="title"> {{ product.name }} </p>
-        <p class="location">{{product.location}} </p>
-        <p class="price"> {{ product.price }} </p>
-        <p class="date">{{product.date}} </p>
-        <img src="img/unclevan.png">
+        <h2>{{event.events[0].name}}</h2>
+        <p class="location">{{event.events[0].location}} </p>
+        <p class="price"> {{event.events[0].price | currency:"USD$"}}</p>
+        <p class="date">{{event.events[0].date}}</p>
+        <img src="{{event.events[0].image}}">
       </div>
-    </div>
-    <div class="col-md-4">
-      <div class="thumbnail">
-        <h2>{{ promo }}</h2>
-        <p class="title"> {{ product.name }} </p>
-        <p class="location">{{product.location}} </p>
-        <p class="price"> {{ product.price }} </p>
-        <p class="date">{{product.date}} </p>
-        <img src="img/unclevan.png">
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="thumbnail">
-        <h2>{{ promo }}</h2>
-        <p class="title"> {{ product.name }} </p>
-        <p class="location">{{product.location}} </p>
-        <p class="price"> {{ product.price }} </p>
-        <p class="date">{{product.date}} </p>
-        <img src="img/unclevan.png">
-      </div>
-    </div>
+    </div> -->
+
   </div>
 
   <div class="footer">
