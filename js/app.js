@@ -3,7 +3,7 @@ var IronTix = angular.module("IronTix", ['ngRoute']);
 IronTix.config(function($routeProvider) {
   $routeProvider
     .when('/home', {
-      templateUrl: 'index.html',
+      templateUrl: 'storefront.html',
       // controller: 'MainController'
     })
     .when('/AdminDashboard', {
