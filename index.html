@@ -1,82 +1,21 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-      <link href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css" rel="stylesheet" />
-    <link href='https://fonts.googleapis.com/css?family=Roboto:500,300,700,400' rel='stylesheet' type='text/css'>
+    <title>IronTix App</title>
     <link href="css/reset.css" rel="stylesheet" />
+    <meta charset="utf-8">
     <link href="css/main.css" rel="stylesheet" />
-
-    <script src=https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js></script>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:500,300,700,400' rel='stylesheet' type='text/css'>
+    <link href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css" rel="stylesheet" />
   </head>
-
-  <body ng-app="myApp">
-
-    <div class="header-container">
-    <div class="header">
-        <div class="left-nav">
-                <h1>Iron Tix</h1>
-        </div>
-        <div class="right-nav">
-            <a href="admin.html">Admin</a>
-        </div>
+  <body ng-app="IronTix">
+    <!-- the partial html contents will populate in the div below -->
+    <div>
+      <ng-view></ng-view>
     </div>
-</div>
-
-    <div class="main" ng-controller="MainController">
-      <div class="container">
-
-        <h1>{{ title }}</h1>
-
-
-        <div class="col-md-4">
-          <div class="thumbnail">
-              <h2>{{ promo }}</h2>
-              <p class="title"> {{ product.name }} </p>
-              <p class="location">{{product.location}} </p>
-              <p class="price"> {{ product.price }} </p>
-              <p class="date">{{product.date}} </p>
-            <img src="img/unclevan.png">
-
-          </div>
-        </div>
-                <div class="col-md-4">
-                  <div class="thumbnail">
-                      <h2>{{ promo }}</h2>
-                      <p class="title"> {{ product.name }} </p>
-                      <p class="location">{{product.location}} </p>
-                      <p class="price"> {{ product.price }} </p>
-                      <p class="date">{{product.date}} </p>
-                    <img src="img/unclevan.png">
-
-                  </div>
-                </div>
-                        <div class="col-md-4">
-                          <div class="thumbnail">
-                              <h2>{{ promo }}</h2>
-                              <p class="title"> {{ product.name }} </p>
-                              <p class="location">{{product.location}} </p>
-                              <p class="price"> {{ product.price }} </p>
-                              <p class="date">{{product.date}} </p>
-                            <img src="img/unclevan.png">
-
-                          </div>
-                        </div>
-
-      </div>
-    </div>
-
-    <div class="footer">
-      <div class="container">
-        <h2>Get Our Stuff!</h2>
-        <h3> Before its gone</h3>
-      </div>
-    </div>
-
-
-    <!-- Modules -->
-    <script src="js/app.js"></script>
-
-    <!-- Controllers -->
-    <script src="js/controllers/MainController.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular-route.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/controllers/controllers.js"></script>
   </body>
 </html>

@@ -1,0 +1,59 @@
+<div class="container">
+  <div class="header-container">
+    <div class="header">
+      <div class="left-nav">
+        <h1>Iron Tix</h1>
+      </div>
+      <div class="right-nav">
+        <a href="#/AdminDashboard">Admin</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="main" ng-controller="MainController">
+    <h1>{{ title }}</h1>
+
+    <!-- do something like this to repeat the products:
+    <ul>
+    <li ng-repeat="student in students | filter:name">{{student.name}}, {{student.city}}</li>
+    </ul> -->
+
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <h2>{{ promo }}</h2>
+        <p class="title"> {{ product.name }} </p>
+        <p class="location">{{product.location}} </p>
+        <p class="price"> {{ product.price }} </p>
+        <p class="date">{{product.date}} </p>
+        <img src="img/unclevan.png">
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <h2>{{ promo }}</h2>
+        <p class="title"> {{ product.name }} </p>
+        <p class="location">{{product.location}} </p>
+        <p class="price"> {{ product.price }} </p>
+        <p class="date">{{product.date}} </p>
+        <img src="img/unclevan.png">
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <h2>{{ promo }}</h2>
+        <p class="title"> {{ product.name }} </p>
+        <p class="location">{{product.location}} </p>
+        <p class="price"> {{ product.price }} </p>
+        <p class="date">{{product.date}} </p>
+        <img src="img/unclevan.png">
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="footer-container">
+      <h2>Get Our Stuff!</h2>
+      <h3> Before it's gone</h3>
+    </div>
+  </div>
+</div>
