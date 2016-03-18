@@ -17,7 +17,7 @@
           <li ng-repeat="events in event.events" class="thumbnail">
             <h2>{{events.name}}</h2>
             <p class="location">{{events.location}} </p>
-            <p class="price"> {{events.price | currency:"USD$"}}</p>
+            <p class="price"> {{events.price | currency:"$"}}</p>
             <p class="date">{{events.date}}</p>
             <img src="{{events.image}}">
           </li>
