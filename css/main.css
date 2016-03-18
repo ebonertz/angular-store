@@ -4,24 +4,39 @@ html, body {
   font-family: 'Roboto', sans-serif;
   width: 100%; }
 
-.header-container {
+.header-nav {
+  align-items: baseline;
   width: 100%;
-  padding-bottom: 3em;
-  border: 1px solid #555; }
+  border-radius: 2px;
+  padding-bottom: 2em;
+  border: 1px solid #555;
+  background-color: #888; }
+
+.header {
+  border: 1px solid green;
+  margin-top: 25px;
+  margin-bottom: 5px; }
 
 .left-nav {
-  padding: 1em;
-  font-size: 2em;
-  margin-left: 10%;
+  padding: .5em;
+  font-size: 1.8em;
+  margin-left: 5%;
   max-width: 300px;
-  text-align: left; }
+  text-align: left;
+  border: 1px solid red; }
 
 .right-nav {
+  display: flex;
+  justify-content: flex-end;
   float: right;
   padding: 11px;
   margin-right: 5%;
-  padding-bottom: 2em;
-  font-size: 1.5em; }
+  font-size: 1em;
+  border: 1px solid black;
+  margin-top: -55px; }
+  .right-nav a:visited {
+    text-decoration: none;
+    color: orange; }
 
 img {
   max-width: 500px; }
@@ -33,16 +48,12 @@ img {
 .col-md-6 img {
   max-width: 500px; }
 
-.header h1 {
-  display: inline-block;
-  text-align: left; }
-
 .footer-container h1 {
   text-align: center;
   margin-left: 5%; }
 
 .main {
-  background-color: #f2f2f2;
+  background-color: #fff;
   padding: 40px 0; }
 
 .main h1 {

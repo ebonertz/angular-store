@@ -1,23 +1,22 @@
 <div class="container">
-  <div class="header-container">
+  <nav class="header-nav">
     <div class="header">
       <div class="left-nav">
-        <h1>Iron Tix</h1>
+        <h1>Sweet Events</h1>
       </div>
       <div class="right-nav">
         <a href="#/AdminDashboard">Admin</a>
       </div>
     </div>
-  </div>
+</nav>
 
   <div class="main" ng-controller="MainController">
-    <h1>Sweet Events!</h1>
 
         <ul>
           <li ng-repeat="events in event.events" class="thumbnail">
             <h2>{{events.name}}</h2>
             <p class="location">{{events.location}} </p>
-            <p class="price"> {{events.price | currency:"USD$"}}</p>
+            <p class="price"> {{events.price | currency:"$"}}</p>
             <p class="date">{{events.date}}</p>
             <img src="{{events.image}}">
           </li>
@@ -38,8 +37,8 @@
 
   <div class="footer">
     <div class="footer-container">
-      <h2>Get Our Stuff!</h2>
-      <h3> Before it's gone</h3>
+      <h2>Get Sweet Tickets to Sweet Events</h2>
+      <h3> <a href="https://github.com/ebonertz"> Evan </a> <a href="https://github.com/silentDJay"> Jeremy</a> </h3>
     </div>
   </div>
 </div>
