@@ -1,6 +1,7 @@
 {
   "events": [
     {
+      "id": 1,
       "name": "Boss Nacho @ Maywood",
       "location": "Raleigh",
       "price": "8.99",
@@ -9,11 +10,8 @@
       "image": "http://i.imgur.com/sePIwKq.png"
     },
     {
-<<<<<<< HEAD
+      "id": 2,
       "name": "Zoso @ Lincoln Theatre",
-=======
-      "name": "Led Zeppelin @ Lincoln Theatre",
->>>>>>> ba1c4a429a3028f358985e119762589d6b4f2a8f
       "location": "Raleigh",
       "price": "19.99",
       "date": "April 30th",
@@ -21,6 +19,7 @@
       "image": "http://i.imgur.com/wBm028F.png"
     },
     {
+      "id": 3,
       "name": "Snarky Puppy @ NCMA",
       "location": "Raleigh",
       "price": "12.99",
@@ -29,6 +28,7 @@
       "image": "http://i.imgur.com/llaK8X7.png"
     },
     {
+      "id": 4,
       "name": "Vulfpeck @ Cat's Cradle",
       "location": "Carrboro",
       "price": "12.00",
@@ -37,6 +37,7 @@
       "image": "http://i.imgur.com/ApDrevR.png"
     },
     {
+      "id": 5,
       "name": "London Symphony Orchestra @ Pinhook",
       "location": "Durham",
       "price": "5.00",
@@ -45,6 +46,7 @@
       "image": "http://i.imgur.com/IoDq9hy.png"
     },
     {
+      "id": 6,
       "name": "Umphrey's McGee @ The Ritz",
       "location": "Raleigh",
       "price": "24.00",
@@ -52,5 +54,6 @@
       "description": "Umphrey's, fresh off their performance at the Master's in Augusta, plays the capital city.",
       "image": "http://i.imgur.com/s4SQEn9.jpg"
     }
-  ]
+  ],
+  "cartEvents": []
 }

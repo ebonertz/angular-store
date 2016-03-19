@@ -5,7 +5,7 @@
         <h1>Sweet Events</h1>
       </div>
       <div class="right-nav">
-        <a href="#/AdminDashboard">Cart</a>
+        <a href="#/cart">Cart</a>
       </div>
     </div>
 </nav>
@@ -14,7 +14,14 @@
 
         <ul>
           <li ng-repeat="events in event.events" class="thumbnail">
-            <h2>{{events.name}}</h2>
+            <h2>
+              <a href="#/eventDetails">{{events.name}}</a>
+              <a href="#/cart">
+                <!-- the span below will house the database ID for the event in question so we can grab it when we go to that product's details or add it ot the cart-->
+                <span class="storefrontID" hidden=true>{{events.id}}</span>
+                <i class="fa fa-cart-plus fa-2x"></i></a>
+            </h2>
+            <!-- <span class="storefrontID" hidden=true>{{events.id}}</span> -->
             <p class="location">{{events.location}} </p>
             <p class="price"> {{events.price | currency:"$"}}</p>
             <p class="date">{{events.date}}</p>
@@ -22,16 +29,6 @@
           </li>
         </ul>
 
-    <!-- the thing below works -->
-    <!-- <div class="col-md-4">
-      <div class="thumbnail">
-        <h2>{{event.events[0].name}}</h2>
-        <p class="location">{{event.events[0].location}} </p>
-        <p class="price"> {{event.events[0].price | currency:"USD$"}}</p>
-        <p class="date">{{event.events[0].date}}</p>
-        <img src="{{event.events[0].image}}">
-      </div>
-    </div> -->
 
   </div>
 
