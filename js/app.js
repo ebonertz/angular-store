@@ -6,8 +6,12 @@ IronTix.config(function($routeProvider) {
       templateUrl: 'storefront.html',
       // controller: 'MainController'
     })
-    .when('/AdminDashboard', {
+    .when('/cart', {
       templateUrl: 'admin.html',
+      // controller: 'CartController'
+    })
+    .when('/eventDetails', {
+      templateUrl: 'details.html',
       // controller: 'CartController'
     })
     .when('/StoreFront', {

@@ -111,6 +111,9 @@ img {
   .thumbnail p {
     font-size: 1.5em; }
 
+.fa-cart-plus {
+  float: right; }
+
 .thumbnail img {
   margin-top: 10px;
   margin-bottom: 30px;

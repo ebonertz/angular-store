@@ -16,7 +16,7 @@ IronTix.controller('MainController', ['$http', '$scope', function($http, $scope)
   // });
 
   $http.get('events.json').success(function(data){
-    console.log("json has been successfully called");
+    console.log("storefront page has been populated");
     $scope.event = data;
   });
 }]);

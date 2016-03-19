@@ -137,6 +137,8 @@ p {
     display: inline;
 }
 
+// styling for the product thumbnails on the storefront
+
 .thumbnail {
  border: 0px;
  position: relative;
@@ -147,6 +149,10 @@ p {
     p {
         font-size: 1.5em;
     }
+}
+
+.fa-cart-plus{
+  float:right;
 }
 
 .thumbnail img {
