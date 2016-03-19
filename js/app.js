@@ -8,7 +8,7 @@ IronTix.config(function($routeProvider) {
     })
     .when('/AdminDashboard', {
       templateUrl: 'admin.html',
-      // controller: '????'
+      // controller: 'CartController'
     })
     .when('/StoreFront', {
       templateUrl: 'storefront.html',

@@ -1,14 +1,37 @@
   <div>
-    <div class="header-container">
     <div class="header">
       <div class="container">
         <div class="left-nav">
-          <h1>Iron Tix</h1>
+          <h1class="header-title"><a href='#/home'>< Sweet Events</a></h1>
         </div>
-        <div class="right-nav">
-          <a href="#/StoreFront">My Store</a>
+     </div>
+ </div>
+
+        <div class="main" ng-controller="MainController">
+            <div ="cart col-md-8">
+
+              <ul>
+                <li ng-repeat="events in event.events" class="thumbnail">
+                <div class="cart-container">
+                <div class="cart-item">
+                  <h2>{{events.name}} <br> <p class="cart-location">{{events.location}} </p> <p class="cart-date">{{events.date}}</p>
+                </div>
+
+                <div class="order-details">
+                <div class="order-quantity"> 1 X </div
+                 <div class="cart-price"> {{events.price | currency:"$"}}</div>
+                 </div>
+                </div>
+                </li>
+
+            </div>
         </div>
+
+              </ul>
+              <div class="total-container">
+
+
+            </div>
+
         </div>
       </div>
-    </div>
-  </div>
