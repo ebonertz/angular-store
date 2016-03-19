@@ -9,7 +9,11 @@
       "image": "http://i.imgur.com/sePIwKq.png"
     },
     {
+<<<<<<< HEAD
       "name": "Zoso @ Lincoln Theatre",
+=======
+      "name": "Led Zeppelin @ Lincoln Theatre",
+>>>>>>> ba1c4a429a3028f358985e119762589d6b4f2a8f
       "location": "Raleigh",
       "price": "19.99",
       "date": "April 30th",
