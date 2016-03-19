@@ -1,46 +1,52 @@
 {
   "events": [
-    { "name": "Boss Nacho @ Maywood",
-      "location":"Raleigh",
+    {
+      "name": "Boss Nacho @ Maywood",
+      "location": "Raleigh",
       "price": "8.99",
-      "date":"March 18th",
-      "description":"Boss Nacho live at the Maywood. Openers include Chief Guacamole and Honcho Horchata.",
-      "image":"http://i.imgur.com/sePIwKq.png"
+      "date": "March 18th",
+      "description": "Boss Nacho live at the Maywood. Openers include Chief Guacamole and Honcho Horchata.",
+      "image": "http://i.imgur.com/sePIwKq.png"
     },
-    { "name": "Zoso @ Lincoln Theatre",
-      "location":"Raleigh",
+    {
+      "name": "Zoso @ Lincoln Theatre",
+      "location": "Raleigh",
       "price": "19.99",
-      "date":"April 30th",
-      "description":"Led Zeppelin reunion tour kickoff show. Herman's Hermits open.",
-      "image":"http://i.imgur.com/wBm028F.png"
+      "date": "April 30th",
+      "description": "Led Zeppelin reunion tour kickoff show. Herman's Hermits open.",
+      "image": "http://i.imgur.com/wBm028F.png"
     },
-    { "name": "Snarky Puppy @ NCMA",
-      "location":"Raleigh",
+    {
+      "name": "Snarky Puppy @ NCMA",
+      "location": "Raleigh",
       "price": "12.99",
-      "date":"May 20th",
-      "description":"Snarky Puppy, live in the outdoor amphitheater at the North Carolina Museum of Art.",
-      "image":"http://i.imgur.com/llaK8X7.png"
+      "date": "May 20th",
+      "description": "Snarky Puppy, live in the outdoor amphitheater at the North Carolina Museum of Art.",
+      "image": "http://i.imgur.com/llaK8X7.png"
     },
-    { "name": "Vulfpeck @ Cat's Cradle",
-      "location":"Carrboro",
+    {
+      "name": "Vulfpeck @ Cat's Cradle",
+      "location": "Carrboro",
       "price": "12.00",
-      "date":"March 24th",
-      "description":"Vulfpeck grooves at Cat's Cradle in the heart of Paris of the Piedmont.",
-      "image":"http://i.imgur.com/ApDrevR.png"
+      "date": "March 24th",
+      "description": "Vulfpeck grooves at Cat's Cradle in the heart of Paris of the Piedmont.",
+      "image": "http://i.imgur.com/ApDrevR.png"
     },
-    { "name": "London Symphony Orchestra @ Pinhook",
-      "location":"Durham",
+    {
+      "name": "London Symphony Orchestra @ Pinhook",
+      "location": "Durham",
       "price": "5.00",
-      "date":"April 1st",
-      "description":"The world-renowned London Symphony Orchestra plays Durham for the first time at the recently-saved Pinhook.",
-      "image":"http://i.imgur.com/IoDq9hy.png"
+      "date": "April 1st",
+      "description": "The world-renowned London Symphony Orchestra plays Durham for the first time at the recently-saved Pinhook.",
+      "image": "http://i.imgur.com/IoDq9hy.png"
     },
-    { "name": "Umphrey's McGee @ The Ritz",
-      "location":"Raleigh",
+    {
+      "name": "Umphrey's McGee @ The Ritz",
+      "location": "Raleigh",
       "price": "24.00",
-      "date":"April 8th",
-      "description":"Umphrey's, fresh off their performance at the Master's in Augusta, plays the capital city.",
-      "image":"http://i.imgur.com/s4SQEn9.jpg"
+      "date": "April 8th",
+      "description": "Umphrey's, fresh off their performance at the Master's in Augusta, plays the capital city.",
+      "image": "http://i.imgur.com/s4SQEn9.jpg"
     }
   ]
 }

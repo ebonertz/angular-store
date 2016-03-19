@@ -9,21 +9,23 @@ html, body {
   width: 100%;
   border-radius: 2px;
   padding-bottom: 2em;
-  border: 1px solid #555;
   background-color: #888; }
 
 .header {
-  border: 1px solid green;
   margin-top: 25px;
   margin-bottom: 5px; }
+  .header h1 {
+    color: orange; }
 
 .left-nav {
   padding: .5em;
   font-size: 1.8em;
   margin-left: 5%;
   max-width: 300px;
-  text-align: left;
-  border: 1px solid red; }
+  text-align: left; }
+  .left-nav a:hover {
+    text-decoration: none;
+    color: orange; }
 
 .right-nav {
   display: flex;
@@ -32,11 +34,21 @@ html, body {
   padding: 11px;
   margin-right: 5%;
   font-size: 1em;
-  border: 1px solid black;
   margin-top: -55px; }
+  .right-nav a {
+    text-decoration: none;
+    color: orange;
+    font-size: 1.5em; }
   .right-nav a:visited {
     text-decoration: none;
-    color: orange; }
+    color: #fff;
+    text-decoration: none; }
+  .right-nav a:hover {
+    text-decoration: none;
+    color: #428bca; }
+
+.header-title h1:hover {
+  text-decoration: none; }
 
 img {
   max-width: 500px; }
@@ -70,7 +82,24 @@ img {
   color: #999999;
   font-size: 20px;
   margin: 0 0 40px 0;
-  padding: 20px 0; }
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 5px;
+  padding-right: 5px; }
+  .main h2 h3 {
+    font-size: .5em; }
+  .main h2 .header-title {
+    text-align: center; }
+  .main h2 p {
+    color: black;
+    font-size: 1.5em;
+    padding-top: 0px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px; }
+
+.order-details {
+  display: inline; }
 
 .thumbnail {
   border: 0px;
@@ -79,6 +108,8 @@ img {
   border-radius: 0;
   margin-bottom: 50px;
   text-align: center; }
+  .thumbnail p {
+    font-size: 1.5em; }
 
 .thumbnail img {
   margin-top: 10px;
@@ -109,8 +140,17 @@ img {
   text-align: center;
   width: 80px;
   position: absolute;
-  top: 80px;
+  top: 100px;
   right: 20px; }
+
+.price:hover {
+  font-size: 18px;
+  background-color: #1f8572;
+  cursor: auto; }
+
+.cart-container {
+  display: flex;
+  flex-direction: column; }
 
 .rating {
   text-align: right;
