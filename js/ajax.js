@@ -1,53 +1,34 @@
 $(document).ready( function () {
 
+var cartData;
 
-// this isn't tied into our project yet!!
+  $.ajax({
+          type : 'GET',
+          dataType : 'json',
+          url: 'http://localhost:3000/events?name=Led+Zeppelin+@+Lincoln+Theatre',
+          headers: {
+              contentType: "application/json",
+            },
+          success : function(data) {
+              console.log(data);
+              cartData = data;
+              $.ajax({
+                      type : 'POST',
+                      dataType : 'json',
+                      url: 'http://localhost:3000/cartEvents/',
+                      data: cartData,
+                      headers: {
+                          contentType: "application/json",
+                        },
+                      success : function(data) {
+                          console.log(data);
+                      }, error: function(request,error){
+                        alert("Request: " +JSON.stringify(request));
+                      }
+              });
+          }, error: function(request,error){
+            alert("Request: " +JSON.stringify(request));
+          }
+  });
 
-//POST creates a new thing
-
-// $.ajax({
-//         type : 'POST',
-//         dataType : 'json',
-//         url: 'events.json',
-//         success : function(data) {
-//             console.log(data);
-//
-//         }
-//     });
-
-//DELETE deletes a thing
-
-// $.ajax({
-//         type : 'DELETE',
-//         dataType : 'json',
-//         url: 'events.json',
-//         success : function(data) {
-//             console.log(data);
-//
-//         }
-//     });
-
-//PUT updates OR creates a new thing
-
-$.ajax({
-        type : 'PUT',
-        dataType : 'json',
-        url: 'events.json',
-        data: { 'inCart': false },
-        success : function(data) {
-            alert("you put a thing!");
-        }
-});
-
-//GET fetches data
-
-// $.ajax({
-//         type : 'GET',
-//         dataType : 'json',
-//         url: 'events.json',
-//         success : function(data) {
-//             console.log(data);
-//
-//         }
-// });
 });
