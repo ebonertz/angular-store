@@ -1,6 +1,6 @@
 $(document).ready( function () {
 
-var cartData;
+// var cartData;
 
 
   $("body").on("click", ".fa-cart-plus", function () {
@@ -20,7 +20,7 @@ var cartData;
               },
             success : function(data) {
                 console.log(data);
-                cartData = data;
+                var cartData = data;
                 $.ajax({
                         type : 'POST',
                         dataType : 'json',
