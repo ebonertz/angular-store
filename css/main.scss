@@ -197,9 +197,15 @@ p {
     cursor: auto;
 }
 
+//styling for the cart page
+
 .cart-container {
     display: flex;
     flex-direction: column;
+}
+
+.fa-times {
+  float: left;
 }
 
 .rating {

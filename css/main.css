@@ -155,6 +155,9 @@ img {
   display: flex;
   flex-direction: column; }
 
+.fa-times {
+  float: left; }
+
 .rating {
   text-align: right;
   -webkit-user-select: none;
