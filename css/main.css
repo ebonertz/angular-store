@@ -99,7 +99,8 @@ img {
     padding-right: 5px; }
 
 .order-details {
-  display: inline; }
+  display: inline;
+  font-size: 3em; }
 
 .thumbnail {
   border: 0px;
@@ -157,6 +158,15 @@ img {
 
 .fa-times {
   float: left; }
+
+.cartItemDetail {
+  display: inline-block; }
+
+.cart-name {
+  margin-left: 10px; }
+
+.cart-price {
+  float: right; }
 
 .rating {
   text-align: right;

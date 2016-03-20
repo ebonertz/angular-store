@@ -55,5 +55,24 @@
       "image": "http://i.imgur.com/s4SQEn9.jpg"
     }
   ],
-  "cartEvents": []
+  "cartEvents": [
+    {
+      "id": 5,
+      "name": "London Symphony Orchestra @ Pinhook",
+      "location": "Durham",
+      "price": 5,
+      "date": "April 1st",
+      "description": "The world-renowned London Symphony Orchestra plays Durham for the first time at the recently-saved Pinhook.",
+      "image": "http://i.imgur.com/IoDq9hy.png"
+    },
+    {
+      "id": 3,
+      "name": "Snarky Puppy @ NCMA",
+      "location": "Raleigh",
+      "price": 12.99,
+      "date": "May 20th",
+      "description": "Snarky Puppy, live in the outdoor amphitheater at the North Carolina Museum of Art.",
+      "image": "http://i.imgur.com/llaK8X7.png"
+    }
+  ]
 }
