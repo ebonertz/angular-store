@@ -135,6 +135,7 @@ p {
 
 .order-details {
     display: inline;
+    font-size: 3em;
 }
 
 // styling for the product thumbnails on the storefront
@@ -204,8 +205,21 @@ p {
     flex-direction: column;
 }
 
+// this is the 'remove from cart' icon
 .fa-times {
   float: left;
+}
+
+.cartItemDetail {
+  display: inline-block;
+}
+
+.cart-name {
+  margin-left: 10px;
+}
+
+.cart-price {
+  float: right;
 }
 
 .rating {
