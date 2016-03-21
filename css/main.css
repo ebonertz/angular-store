@@ -156,6 +156,14 @@ img {
   padding-left: 15px;
   padding-bottom: 15px; }
 
+.details-container {
+  text-align: center;
+  max-width: 900px; }
+
+.details-list {
+  font-size: 1.5em;
+  margin-left: 5; }
+
 .cart-container {
   display: flex;
   flex-direction: column;

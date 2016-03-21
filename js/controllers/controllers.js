@@ -1,4 +1,11 @@
 IronTix.controller('MainController', ['$http', '$scope', function($http, $scope) {
+
+  $http.get('events.json').success(function(data){
+    console.log("storefront page has been populated");
+    $scope.event = data;
+  });
+}]);
+
   // $scope.title = 'Upcoming Events';
   // $scope.promo = 'Awesome Event You Love!';
   // $scope.product = {
@@ -14,9 +21,3 @@ IronTix.controller('MainController', ['$http', '$scope', function($http, $scope)
   //   console.log("shit!");
   //   console.log(event.events[0]);
   // });
-
-  $http.get('events.json').success(function(data){
-    console.log("storefront page has been populated");
-    $scope.event = data;
-  });
-}]);
