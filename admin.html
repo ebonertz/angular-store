@@ -2,41 +2,35 @@
     <div class="header">
       <div class="container">
         <div class="left-nav">
-          <h1class="header-title"><a href='#/home'>< Sweet Events</a></h1>
-        </div>
-     </div>
- </div>
-
-        <div class="main" ng-controller="MainController">
-            <div ="cart col-md-8">
-
-              <ul>
-                <li ng-repeat="events in event.cartEvents" class="thumbnail">
-                <div class="cart-container">
-                  <div class="cart-item">
-                    <h2>
-                      <span class="storefrontID cartItemDetail" hidden=true>{{events.id}}</span>
-                      <i class="fa fa-times fa-2x cartItemDetail"></i>
-                      <div class="cartName cartItemDetail">{{events.name}}</div>
-                      <i class="fa fa-minus-square fa-2x"></i>
-                      <div class="lineItem-quantity cartItemDetail">1</div>
-                      <i class="fa fa-plus-circle fa-2x"></i>
-                      <div class="cart-price cartItemDetail"> {{events.price | currency:"$"}}</div>
-                    </h2>
-                  </div>
-                </div>
-                </li>
-
-            </div>
-          </div>
-        </ul>
-
-            <div class="total-container">
-              <h2>Order Total:</h2>
-              <h2 id="orderTotal"></h2>
-
-
-            </div>
-
+          <h1 class="header-title"><a href='#/home'>< Sweet Events</a></h1>
         </div>
       </div>
+    </div>
+        <div class="main" ng-controller="MainController">
+            <div ="cart col-md-8">
+              <ul>
+                <li ng-repeat="events in event.cartEvents" class="thumbnail">
+                  <div class="cart-container">
+                    <div class="cart-item">
+                      <h2>
+                        <span class="storefrontID cartItemDetail" hidden=true>{{events.id}}</span>
+                        <i class="fa fa-times fa-2x cartItemDetail"></i>
+                        <div class="cartName cartItemDetail">{{events.name}}</div>
+                        <i class="fa fa-minus-square fa-2x"></i>
+                        <div class="lineItem-quantity cartItemDetail">1</div>
+                        <i class="fa fa-plus-circle fa-2x"></i>
+                        <div class="cart-price cartItemDetail"> {{events.price | currency:"$"}}</div>
+                      </h2>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        
+        <div class="total-container">
+          <h2>Order Total:</h2>
+          <h2 id="orderTotal"></h2>
+        </div>
+
+  </div>
