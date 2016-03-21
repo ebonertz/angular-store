@@ -194,11 +194,24 @@ p {
  right: 20px;
 }
 
-.price:hover {
-    font-size: 18px;
-    background-color: darken(#39d1B4, 20%);
-    cursor: auto;
+.fa-cart-plus {
+    margin-right: 30px;
+    margin-bottom: 15px;
 }
+
+.fa-times {
+    padding-right: 55px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+}
+
+
+
+// .price:hover {
+//     font-size: 18px;
+//     background-color: darken(#39d1B4, 20%);
+//     cursor: auto;
+// }
 
 //styling for the cart page
 

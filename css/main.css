@@ -147,10 +147,14 @@ img {
   top: 100px;
   right: 20px; }
 
-.price:hover {
-  font-size: 18px;
-  background-color: #1f8572;
-  cursor: auto; }
+.fa-cart-plus {
+  margin-right: 30px;
+  margin-bottom: 15px; }
+
+.fa-times {
+  padding-right: 55px;
+  padding-left: 15px;
+  padding-bottom: 15px; }
 
 .cart-container {
   display: flex;
