@@ -120,6 +120,10 @@ h3 {
     text-align: center;
 }
 
+.header-title a {
+    float: left;
+}
+
 p {
     color: black;
     font-size: 1.5em;
@@ -141,10 +145,8 @@ p {
 // styling for the product thumbnails on the storefront
 
 .thumbnail {
- border: 0px;
  position: relative;
  padding: 50px;
-   border-radius: 0;
    margin-bottom:50px;
    text-align: center;
     p {
@@ -203,6 +205,34 @@ p {
 .cart-container {
     display: flex;
     flex-direction: column;
+    min-width: 500px;
+}
+
+.cart-item {
+    background: #fff;
+}
+
+.cart-price {
+    margin-right: 50px;
+}
+
+.ticket-counter {
+    float: right;
+    margin-bottom: 55px;
+    margin-right: 50px;
+    margin-top: -10px;
+
+}
+
+.total-container {
+    float: right;
+    margin-right: 20px;
+    display: flex;
+    align-content: flex-start;
+}
+
+#orderTotal h2{
+    float: right;
 }
 
 // this is the 'remove from cart' icon
