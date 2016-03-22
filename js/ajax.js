@@ -110,9 +110,9 @@ $(document).ready( function () {
     currentQuantity = $(this).siblings(".lineItem-quantity").html();
     if (currentQuantity <= 9){
       //the line below is actually just throwing a '1' after the first number. I need to get the code to think that currentQuantity is a number !
-      $(this).siblings(".lineItem-quantity").html(currentQuantity + 1);
       console.log(currentQuantity);
-      currentQuantity =+ 1;
+      currentQuantity = Number(currentQuantity) + 1;
+      $(this).siblings(".lineItem-quantity").html(currentQuantity);
       event.stopPropagation();
     } else {
       // do nothing - you can only buy 9 tickets for a single event
