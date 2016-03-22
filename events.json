@@ -2,18 +2,18 @@
   "events": [
     {
       "id": 1,
-      "name": "Boss Nacho @ Maywood",
+      "name": "Umphrey's McGee @ The Ritz",
       "location": "Raleigh",
-      "price": 8,
-      "date": "March 18th",
-      "description": "Boss Nacho live at the Maywood. Openers include Chief Guacamole and Honcho Horchata.",
-      "image": "http://i.imgur.com/sePIwKq.png"
+      "price": 24,
+      "date": "April 8th",
+      "description": "Umphrey's, fresh off their performance at the Master's in Augusta, plays the capital city.",
+      "image": "http://i.imgur.com/s4SQEn9.jpg"
     },
     {
       "id": 2,
       "name": "Zoso @ Lincoln Theatre",
       "location": "Raleigh",
-      "price": 19.99,
+      "price": 19,
       "date": "April 30th",
       "description": "Led Zeppelin reunion tour kickoff show. Herman's Hermits open.",
       "image": "http://i.imgur.com/wBm028F.png"
@@ -22,7 +22,7 @@
       "id": 3,
       "name": "Snarky Puppy @ NCMA",
       "location": "Raleigh",
-      "price": 12.99,
+      "price": 12,
       "date": "May 20th",
       "description": "Snarky Puppy, live in the outdoor amphitheater at the North Carolina Museum of Art.",
       "image": "http://i.imgur.com/llaK8X7.png"
@@ -47,23 +47,23 @@
     },
     {
       "id": 6,
-      "name": "Umphrey's McGee @ The Ritz",
-      "location": "Raleigh",
-      "price": 24,
-      "date": "April 8th",
-      "description": "Umphrey's, fresh off their performance at the Master's in Augusta, plays the capital city.",
-      "image": "http://i.imgur.com/s4SQEn9.jpg"
-    }
-  ],
-  "cartEvents": [
-    {
-      "id": 1,
       "name": "Boss Nacho @ Maywood",
       "location": "Raleigh",
       "price": 8,
       "date": "March 18th",
       "description": "Boss Nacho live at the Maywood. Openers include Chief Guacamole and Honcho Horchata.",
       "image": "http://i.imgur.com/sePIwKq.png"
+    }
+  ],
+  "cartEvents": [
+    {
+      "id": 1,
+      "name": "Umphrey's McGee @ The Ritz",
+      "location": "Raleigh",
+      "price": 24,
+      "date": "April 8th",
+      "description": "Umphrey's, fresh off their performance at the Master's in Augusta, plays the capital city.",
+      "image": "http://i.imgur.com/s4SQEn9.jpg"
     }
   ]
 }

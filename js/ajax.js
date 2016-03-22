@@ -100,10 +100,7 @@ $(document).ready( function () {
 
   // these clickEvents should update the quantity for each cart item and then update the order total on the cart
   var currentQuantity;
-  $("body").on("click", ".fa-minus-square", function () {
-    console.log($(this).siblings(".lineItem-quantity").html());
-    currentQuantity = $(this).siblings(".lineItem-quantity").html();
-  });
+
 
   $("body").on("click", ".fa-plus-circle", function () {
     console.log($(this).siblings(".lineItem-quantity").html());
@@ -118,4 +115,20 @@ $(document).ready( function () {
       // do nothing - you can only buy 9 tickets for a single event
     }
   });
+
+    $("body").on("click", ".fa-minus-square", function () {
+      console.log($(this).siblings(".lineItem-quantity").html());
+      currentQuantity = $(this).siblings(".lineItem-quantity").html();
+      if (currentQuantity > 1){
+        console.log(currentQuantity);
+        currentQuantity = Number(currentQuantity) - 1;
+        $(this).siblings(".lineItem-quantity").html(currentQuantity);
+        event.stopPropagation();
+      } else {
+        console.log("You must get one!")
+      }
+    });
+
+    
+
 });
