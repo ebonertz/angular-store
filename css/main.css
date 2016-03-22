@@ -115,6 +115,9 @@ img {
 .fa-cart-plus {
   float: right; }
 
+.fa-times:hover {
+  color: orange; }
+
 .thumbnail img {
   margin-top: 10px;
   margin-bottom: 30px;
@@ -178,20 +181,21 @@ img {
 .ticket-counter {
   float: right;
   margin-bottom: 55px;
-  margin-right: 50px;
-  margin-top: -10px; }
+  margin-right: 50px; }
 
 .total-container {
   float: right;
   margin-right: 20px;
   display: flex;
-  align-content: flex-start; }
+  align-content: flex-start;
+  padding: 1em; }
 
 #orderTotal h2 {
   float: right; }
 
 .fa-times {
-  float: left; }
+  float: left;
+  margin-top: -12px; }
 
 .cartItemDetail {
   display: inline-block; }

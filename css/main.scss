@@ -88,6 +88,7 @@ img {
 .main {
  background-color: #fff ;
  padding: 40px 0;
+ .cart-container {}
 }
 
 .main h1 {
@@ -158,6 +159,10 @@ p {
   float:right;
 }
 
+.fa-times:hover {
+    color: orange;
+}
+
 .thumbnail img {
    margin-top: 10px;
  margin-bottom: 30px;
@@ -212,7 +217,7 @@ p {
 
 .details-list {
     font-size: 1.5em;
-    margin-left: 5 
+    margin-left: 5
 }
 
 
@@ -244,7 +249,6 @@ p {
     float: right;
     margin-bottom: 55px;
     margin-right: 50px;
-    margin-top: -10px;
 
 }
 
@@ -253,6 +257,7 @@ p {
     margin-right: 20px;
     display: flex;
     align-content: flex-start;
+    padding: 1em;
 }
 
 #orderTotal h2{
@@ -262,6 +267,7 @@ p {
 // this is the 'remove from cart' icon
 .fa-times {
   float: left;
+  margin-top: -12px;
 }
 
 .cartItemDetail {

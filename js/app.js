@@ -4,15 +4,15 @@ IronTix.config(function($routeProvider) {
   $routeProvider
     .when('/home', {
       templateUrl: 'storefront.html',
-      // controller: 'MainController'
+      controller: 'MainController'
     })
     .when('/cart', {
       templateUrl: 'admin.html',
-      // controller: 'CartController'
+      controller: 'CartController'
     })
     .when('/eventDetails', {
       templateUrl: 'details.html',
-      // controller: 'CartController'
+      controller: 'DetailsController'
     })
     .when('/StoreFront', {
       templateUrl: 'storefront.html',

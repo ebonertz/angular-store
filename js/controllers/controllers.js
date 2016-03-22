@@ -18,6 +18,58 @@
 //       $scope.newExpense = { };
 //     };
 
+IronTix.controller('CartController', ['$http', '$scope', function($http, $scope) {
+
+    $http.get('events.json').success(function(data){
+      console.log("cart has been populated");
+      $scope.cartEvents = data.cartEvents;
+      $scope.totalcost=0;
+      for(var i = 0; i< $scope.cartEvents.length; i++){
+          $scope.totalcost = Math.round($scope.cartEvents[i].price + $scope.totalcost);
+      }
+    //   $("#totalCost").text($scope.totalcost);
+    });
+
+    //this eventlistener should delete an item from the cart
+    $("body").on("click", ".fa-times", function () {
+      // console.log($(this).siblings(".storefrontID").html());
+      // get the ID of the event clicked so we can GET the info for it to be removed from the cart
+      var clickedEventID = $(this).siblings(".storefrontID").html();
+
+      $.ajax({
+              type : 'DELETE',
+              dataType : 'json',
+              url: 'http://localhost:3000/cartEvents/'+clickedEventID+'/',
+              headers: {
+                  contentType: "application/json",
+                },
+              success : function(data) {
+                  console.log("the event with id " + clickedEventID+ " was removed from the cart!");
+                  $http.get('http://localhost:3000/cartEvents/').success(function(data){
+                    console.log("data is :");
+                    console.log(data);
+                    $scope.cartEvents.pop();
+                  });
+              }, error: function(request,error){
+                  console.log("this item has already been deleted from cartEvents");
+              }
+      });
+    });
+
+}
+
+]);
+
+IronTix.controller('DetailsController', ['$http', '$scope', function($http, $scope) {
+
+    $http.get('events.json').success(function(data){
+      console.log("details have been populated");
+      $scope.event = data.events[0];
+    });
+}
+]);
+
+
 IronTix.controller('MainController', ['$http', '$scope', function($http, $scope) {
 
   console.log('controller.js ran');
@@ -26,10 +78,33 @@ IronTix.controller('MainController', ['$http', '$scope', function($http, $scope)
   // $scope.events = eventService.getEvents();
 
   $http.get('events.json').success(function(data){
-    console.log("storefront page has been populated");
+    console.log("cart has been populated");
     $scope.event = data;
+
   });
 
+        $("body").on("click", ".fa-cart-plus", function (event) {
+        // function addToCart() {
+        //   console.log("addToCart function was called");
+          event.stopPropagation();
+          // get the ID of the event clicked so we can GET the info for it to display in the cart
+
+          var clickedEventID = $(this).siblings(".storefrontID").html();
+          // the thing below GETs a single event and POSTS it to the other array (cartEvents) in the database
+          $http.get('http://localhost:3000/events/'+clickedEventID+'/').then(function(result){
+            $scope.pickedEvent = result.data;
+            console.log("$scope.pickedEvent is :");
+            console.log($scope.pickedEvent);
+          }).then(function(){
+            $http.post('http://localhost:3000/cartEvents/', $scope.pickedEvent).then(function(){
+              $http.get('http://localhost:3000/cartEvents/').success(function(data){
+                console.log("data is :");
+                console.log(data);
+              });
+            });
+          });
+        });
+}]);
 
   // $http.get('http://localhost:3000/cartEvents/').success(function(data){
   //   console.log("cartEvent has been initialized");
@@ -38,27 +113,8 @@ IronTix.controller('MainController', ['$http', '$scope', function($http, $scope)
 
   // DO AN NG-CLICK thing instead of an onclick function. See here: http://stackoverflow.com/questions/14374440/the-view-is-not-updated-when-the-model-updates-in-angularjs
 
-  $("body").on("click", ".fa-cart-plus", function (event) {
-  // function addToCart() {
-  //   console.log("addToCart function was called");
-    event.stopPropagation();
-    // get the ID of the event clicked so we can GET the info for it to display in the cart
 
-    var clickedEventID = $(this).siblings(".storefrontID").html();
-    // the thing below GETs a single event and POSTS it to the other array (cartEvents) in the database
-    $http.get('http://localhost:3000/events/'+clickedEventID+'/').then(function(result){
-      $scope.pickedEvent = result.data;
-      console.log("$scope.pickedEvent is :");
-      console.log($scope.pickedEvent);
-    }).then(function(){
-      $http.post('http://localhost:3000/cartEvents/', $scope.pickedEvent).then(function(){
-        $http.get('http://localhost:3000/cartEvents/').success(function(data){
-          console.log("data is :");
-          console.log(data);
-        });
-      });
-    });
-  });
+
 
   // the above Angular-native $http call does the exact same thing as the nested $ajax calls below -
   //   $.ajax({
@@ -96,33 +152,3 @@ IronTix.controller('MainController', ['$http', '$scope', function($http, $scope)
   //     }
   //   });
   // });
-
-//this eventlistener should delete an item from the cart
-  $("body").on("click", ".fa-times", function () {
-    // event.stopPropagation();
-    // console.log($(this).siblings(".storefrontID").html());
-    // get the ID of the event clicked so we can GET the info for it to be removed from the cart
-    var clickedEventID = $(this).siblings(".storefrontID").html();
-
-    $.ajax({
-            type : 'DELETE',
-            dataType : 'json',
-            url: 'http://localhost:3000/cartEvents/'+clickedEventID+'/',
-            headers: {
-                contentType: "application/json",
-              },
-            success : function(data) {
-                console.log("the event with id " + clickedEventID+ " was removed from the cart!");
-                $http.get('http://localhost:3000/cartEvents/').success(function(data){
-                  console.log("data is :");
-                  console.log(data);
-                });
-            }, error: function(request,error){
-                console.log("this item has already been deleted from cartEvents");
-            }
-    });
-  });
-
-}]);
-
-// IronTix.controller('DeleteController', ['$http', '$scope' function($)]

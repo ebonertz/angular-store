@@ -6,18 +6,16 @@
    </div>
 </div>
 
-  <div class="main" ng-controller="MainController">
-
+  <div class="main" ng-controller="DetailsController">
     <div>
         <div class="details container">
-            <div ng-model= "events in events.events">
-                  <h2 class="details-name"> {{events[1].name}}</h2>
+                  <h2 class="details-name"> {{event.name}}</h2>
                      <a href="#/cart"><i class="fa fa-cart-plus fa-2x"></i></a>
-            </div>
+            <!-- </div> -->
             <div class="details-list">
-                <p class="location"> {{events.events[1].location}}</p>
-                <p class="details-price">{{events.events[0].price}}</p>
-                <p class="date">{{events.events[0].date}}</p>
+                <p class="location"> {{event.location}}</p>
+                <p class="details-price">{{event.price}}</p>
+                <p class="date">{{event.date}}</p>
             </div>
         </div>
     </div>
